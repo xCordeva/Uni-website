@@ -1,0 +1,561 @@
+/* adjusting every element */
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/* the background image used in the home page */
+.imgbck{
+    width:100% ;
+    height: 100dvh;
+    background-image: linear-gradient(rgba(0, 0,0, 0.75),rgba(0, 0, 0,0.75)), url(Images/Sea.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* the background image used in the other pages */
+.imgbck-{
+    width:100% ;
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0,0, 0.75),rgba(0, 0, 0,0.75)), url(Images/Sea.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* the header logo and nav bar*/
+.head{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 90%;
+    padding-top: 30px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+/* the header hover effect*/
+.head h1:hover{
+    color:hsl(0, 100%, 62%);
+    transition: 0.5s;
+}
+/* the nav bar adjustings and the hover effect*/
+.head .navv li{
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+}
+.head .navv li::after{
+    content: '';
+    bottom: -10px;
+    height: 2px;
+    width: 0;
+    display: block;
+    margin: auto;
+    background: hsl(0, 100%, 62%);
+    transition: 0.5s;
+}
+.head .navv li:hover:after{
+    width: 100%;
+}
+/* main part of home page with cta button*/
+.bigwords{
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    position: absolute;
+}
+.bigwords h1{
+    padding: 20px;
+}
+.bigwords p{
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+.bigwords button{
+    color: white;
+    background: transparent;
+    font-size: 1.4em;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border: 2px solid hsl(0, 100%, 62%);
+    cursor: pointer;
+}
+.bigwords button:hover{
+    border: none;
+    background-color: hsl(0, 100%, 62%);
+    transition: 0.5s;
+}
+/* Courses part of home page*/
+.courses{
+    text-align: center;
+    padding:30px;
+}
+.courses h1{
+    padding-bottom: 20px;
+}
+/* Courses 3 boxs adjusting and hovering*/
+.coursesbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+.coursesbox h4{
+    padding-bottom: 20px;
+    font-size: 1.2em;
+}
+.cbox{
+    width: 30%;
+    display: inline-block;
+    background-color: hsl(0, 100%, 84%);
+    padding: 50px;
+}
+.cbox:hover{
+    box-shadow: 0px 0px 10px hsl(0, 100%, 30%);
+    transition: 0.5s;
+}
+/* Global  part of home page*/
+.global{
+    text-align: center;
+    padding:30px;
+    width: 80%;
+    margin: auto;
+}
+.globalbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+.gbox{
+    position: relative;
+    margin: 10px;
+}
+.gbox img{
+    width: 100%;
+    height: 600px;
+}
+.gbox span{
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(255, 88, 88, 0.75),rgba(255, 88, 88, 0.75));
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+.gbox:hover span{
+    height: 100%;
+    box-shadow: 0px 0px 10px hsl(0, 100%, 30%);
+    transition: 0.5s;
+}
+
+.testi{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+.testi h1{
+    padding-bottom: 20px;
+}
+.testi p{
+    padding-bottom: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.testis {
+    flex-basis: 44%;
+    text-align: left;
+    border-radius: 10px;
+    background: hsl(0, 100%, 82%);
+    padding: 25px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    position: relative;
+    align-items: center;
+}
+.testis .imgnp {
+    display: flex; /* Display the image and p tag side by side */
+    align-items: center; /* Center the items vertically */
+  }
+
+.testis p{
+    padding-left: 10px;
+    margin: 0;
+}
+.testis h3{
+    margin: 0;
+}
+.testis img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.testis i{
+    margin: 2px 2px; 
+}
+/* Cta*/
+.cta{
+    background-image: linear-gradient(rgba(0, 0,0, 0.75),rgba(0, 0, 0,0.75)), url(Images/cta.jpg);
+    width: 80%;
+    height: 400px;
+    text-align: center;
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image within the container */
+    margin: 50px auto;
+    position: relative;
+}
+.ctacontent{
+    color: #fff;
+    text-align: center;
+    top: 40%;
+    width: 100%;
+    position: absolute;
+    margin: 10px;
+}
+.cta .ctacontent button{
+    color: white;
+    background: transparent;
+    font-size: 1.4em;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border: 2px solid hsl(0, 100%, 62%);
+    cursor: pointer;
+    margin: 10px;
+}
+.cta .ctacontent button:hover{
+    border: none;
+    background-color: hsl(0, 100%, 62%);
+    transition: 0.5s;
+}
+.about{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+
+}
+.about h1{
+    margin-bottom: 15px;
+}
+.footer{
+    margin: auto;
+    position: relative;
+    bottom: 0;
+}
+footer .social-icons{
+    text-align: center;
+    margin-top:20px;
+ 
+}
+footer .social-icons i{
+    padding-left: 10px;
+    color: hsl(0, 100%, 62%);
+    
+}
+.social-icons i:hover{
+    color: hsl(0, 100%, 34%);
+}
+footer .foot{
+    margin:40px 20px;
+    text-align: center;
+}
+footer .foot span{
+    font-weight: 1000;
+    font-size: 1.1em;
+    color: hsl(0, 100%, 62%);
+}
+footer .foot span:hover{
+    color: hsl(0, 100%, 28%);
+}
+/***************** About Page *********************/
+.about-main{
+    margin:auto;
+    margin-top: 150px;
+    margin-bottom: 70px;
+    justify-content: center;
+    width: 80%;
+    height: 60vh;
+    display: flex;
+}
+.content-about{
+    display: flex;
+    flex-direction: column;
+}
+.content-about h1{
+    padding-bottom:20px ;
+}
+.content-about p{
+    font-size: 1.1em;
+    margin-right: 40px;
+}
+.content-about button{
+    color: black;
+    margin-top: 20px;
+    background: transparent;
+    font-size: 1.4em;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border: 2px solid hsl(0, 100%, 62%);
+    cursor: pointer;
+}
+.content-about button:hover{
+    border: none;
+    background-color: hsl(0, 100%, 62%);
+    transition: 0.5s;
+}
+.about-main img{
+    width: 50%;
+    height: 80%;
+}
+/***************** End of About Page *********************/
+/***************** Courses Page *********************/
+.test{
+    padding:10px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.testboxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.testboxes img{
+    width: 100%;
+    height: 340px;
+    margin: auto;
+    border-radius: 10px;
+}
+.tbox{
+    margin: 25px;
+}
+.tbox h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+/*****************  End of Courses Page *********************/
+/***************** Blog Page *********************/
+.blog-main{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.arrange{
+    flex-basis: 70%;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.arrange img{
+    width: 100%;
+}
+.arrange h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.posts{
+    flex-basis: 30%;
+}
+.posts h5{
+    width: 90%;
+    height: 40px;
+    padding: auto;
+    border: 1px solid;
+    align-items: cent;
+    background-color: hsl(0, 100%, 62%);
+    color: #fff;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.posts .categories{
+    width: 90%;
+    margin-top: 10px;
+}
+.posts .categories .name{
+    display: inline-block;
+    float: left;
+    color: grey;
+    font-size: 12px;
+}
+.posts .categories .num{
+    display: inline-block;
+    float: right;
+    color: grey;
+    font-size: 12px;
+}
+.comment{
+    width: 100%;
+    height: 400px;
+    border: 2px solid lightgrey;
+    margin-top: 50px;
+
+}
+.comment h5{
+    margin: 20px 0 0 20px;
+    font-size: 1.1em;
+}
+.comment form{
+    display: flex;
+    flex-direction: column ;
+    margin: 10px;
+}
+.comment form #name{
+    height: 30px;
+    margin: 30px 0 30px 0;
+    background-color: hsl(0, 0%, 85%);
+    padding: 20px;
+    border: 1px solid lightslategray;
+}
+.comment form #email{
+    height: 30px;
+    margin: 0 0 30px 0;
+    background-color: hsl(0, 0%, 85%);
+    padding: 20px;
+    border: 1px solid lightslategray;
+}
+.comment form #comment{
+    height: 80px;
+    margin: 0 0 30px 0;
+    background-color: hsl(0, 0%, 85%);
+    padding: 20px;
+    border: 1px solid lightslategray;
+}
+.comment form button{
+    width: 30%;
+    height: 40px;
+    color: black;
+    background: transparent;
+    font-size: 1.1em;
+    text-align: center;
+    border: 2px solid hsl(0, 100%, 62%);
+    cursor: pointer;
+}
+.comment form button:hover{
+    border: none;
+    background-color: hsl(0, 100%, 62%);
+    transition: 0.5s;
+}
+/***************** End of Blog Page *********************/
+/***************** Contact Page *********************/
+.contact-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0 100px 0 ;
+}
+.contact-main iframe{
+    width: 900px;
+    height: 600px;
+}
+.contact-content{
+    width: 90%;
+    margin: 100px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-content .info{
+    margin-left: 150px;
+}
+.contact-content .info i{
+    display: inline-block;
+    font-size: 1.4em;
+    margin-right: 20px;
+}
+.contact-content .info h3{
+    margin: 0 0 10px 0;
+}
+.contact-content .info p{
+    margin: 0 0 10px 0;
+}
+.contact-content .info-line{
+    display: flex;
+}
+.contact-form{
+    width: 60%;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column ;
+    margin: 0 0 0 0;
+
+}
+.contact-form form #name{
+    height: 30px;
+    margin: 0 0 30px 0;
+    background-color: hsl(0, 0%, 85%);
+    padding: 20px;
+    border: 1px solid lightslategray;
+}
+.contact-form form #subject{
+    height: 30px;
+    margin: 0 0 30px 0;
+    background-color: hsl(0, 0%, 85%);
+    padding: 20px;
+    border: 1px solid lightslategray;
+}
+
+.contact-form form #email{
+    height: 30px;
+    margin: 0 0 30px 0;
+    background-color: hsl(0, 0%, 85%);
+    padding: 20px;
+    border: 1px solid lightslategray;
+}
+.contact-form form #message{
+    height: 80px;
+    margin: 0 0 30px 0;
+    background-color: hsl(0, 0%, 85%);
+    padding: 20px;
+    border: 1px solid lightslategray;
+}
+.contact-form form button{
+    width: 30%;
+    height: 40px;
+    color: black;
+    background: transparent;
+    font-size: 1.1em;
+    text-align: center;
+    border: 2px solid hsl(0, 100%, 62%);
+    cursor: pointer;
+}
+.contact-form form button:hover{
+    border: none;
+    background-color: hsl(0, 100%, 62%);
+    transition: 0.5s;
+}
