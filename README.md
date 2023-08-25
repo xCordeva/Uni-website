@@ -28,6 +28,7 @@ To view the website locally:
 ## Known Issues
 
 - **Spaghetti Coding:** This was my 2nd website that I created that's why the code looks like a mess.
+- **Responsiveness:** This project was developed before I learned responsive design, which explains its non-responsive layout.
 - **Commits:** This website was created before I knew what Git actually is that's why it's all commited together at once with no stages, also it was before learning how to make a website responsive that explains this issue.
 
 
